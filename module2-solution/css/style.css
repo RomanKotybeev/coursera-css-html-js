@@ -32,6 +32,18 @@ p.card-content {
     clear: right;
 }
 
+#chocolate {
+    background-color:#e1bee7;
+}
+
+#ma-amoul {
+    background-color:#d3b7d3;
+}
+
+#lime-bars {
+    background-color:#eb84eb;
+}
+
 .card {
     color: #000000;
     background-color: #c8e6c9;
