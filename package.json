@@ -1,0 +1,15 @@
+{
+  "name": "module2-solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d module2-solution"
+  },
+  "author": "Kotyubeev Roman",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "homepage": "https://RomanKotybeev.github.io/coursera-test"
+}
