@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d module2-solution"
+    "deploy": "gh-pages -d module3-solution"
   },
   "author": "Kotyubeev Roman",
   "license": "ISC",
   "dependencies": {
+    "@popperjs/core": "^2.4.0",
     "gh-pages": "^2.2.0"
   },
   "homepage": "https://RomanKotybeev.github.io/coursera-test"
