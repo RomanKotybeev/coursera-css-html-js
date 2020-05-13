@@ -24,15 +24,16 @@ Good Bye Jim
 
 (function (window) {
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-  window.names = names
+  
+  names.forEach(name => {
+    if (name.toLowerCase().startsWith('j')) {
+      byeSpeaker.speak(name);
+    } else {
+      helloSpeaker.speak(name);
+    }
+  });
 })(window);
 
 
-names.forEach(name => {
-  if (name.toLowerCase().startsWith('j')) {
-    console.log(byeSpeaker.speak(name))
-  } else {
-    console.log(helloSpeaker.speak(name))
-  }
-}); 
+
 
