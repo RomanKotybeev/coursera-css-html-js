@@ -22,17 +22,16 @@ Hello Laura
 Good Bye Jim
 */
 
-(function (window) {
-  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-  
-  names.forEach(name => {
-    if (name.toLowerCase().startsWith('j')) {
-      byeSpeaker.speak(name);
-    } else {
-      helloSpeaker.speak(name);
-    }
-  });
-})(window);
+
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+names.forEach(name => {
+  if (name.toLowerCase().startsWith('j')) {
+    byeSpeaker.speak(name);
+  } else {
+    helloSpeaker.speak(name);
+  }
+});
 
 
 
