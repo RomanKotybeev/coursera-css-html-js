@@ -1,10 +1,10 @@
 {
-  "name": "module2-solution",
+  "name": "module4-solution",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d module3-solution"
+    "deploy": "gh-pages -d module4-solution"
   },
   "author": "Kotyubeev Roman",
   "license": "ISC",
