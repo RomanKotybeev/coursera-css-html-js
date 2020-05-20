@@ -1,3 +1,16 @@
+$(function () { // Same as document.addEventListener("DOMContentLoaded"...
+  $('#navbarToggle').blur(function (event) {
+    var screenWidth = window.innerWidth
+    if (screenWidth < 992) {
+      $('#navbarSupportedContent').collapse('hide')
+    }
+  })
+  // In Firefox and Safari, the click event doesn't retain the focus
+  // on the clicked button.
+  $('#navbarToggle').click(function (event) {
+    $(event.target).focus()
+  })
+});
 
 (function (global) {
   var dc = {}
@@ -22,14 +35,6 @@
     const targetElem = document.querySelector(selector)
     targetElem.innerHTML = html
   }
-
-  // document.addEventListener('DOMContentLoaded', (event) => {
-  //   showLoading('main')
-  //   global.$ajaxUtils.sendGetRequest(homeHtmlUrl, (responseText) => {
-  //     document.querySelector('#main-content').innerHTML = responseText
-  //   },
-  //   false)
-  // })
 
   const insertProperty = (string, name, value) => {
     const propToReplace = `{{${name}}}`
