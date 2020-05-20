@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d module4-solution/harder"
+    "deploy": "gh-pages -d module5-solution"
   },
   "author": "Kotyubeev Roman",
   "license": "ISC",
