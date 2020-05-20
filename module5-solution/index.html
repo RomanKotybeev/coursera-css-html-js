@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Chu's restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body>
+    
+    <header>
+        <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="navbar-brand">
+
+                    <div class="d-inline-block">
+                        <a href="index.html" class="float-left d-none d-sm-none d-md-block">
+                            <div id="logo-img"></div>
+                            <!-- <img src="images/restaurant-logo_large.png" alt="Logo image"> -->
+                        </a>
+                    </div>
+                    <div class="d-inline-block align-top">
+                        
+                            <a href="index.html">
+                                <h1>David Chu's China Bistro</h1>
+                            </a>
+                            <p>
+                                <img src="images/star-k-logo.png" alt="Kosher Cerified star">
+                                <span>Kosher Certified</span>
+                            </p>
+                    </div>
+                </div>
+
+                <button id="navbarToggle"class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="nav-list" class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home fa-2x"></i>
+                                <br class="d-none d-sm-none d-md-none d-lg-block">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="$dc.loadMenuCategories();">
+                                <i class="fas fa-utensils fa-2x"></i>
+                                <br class="d-none d-sm-none d-md-none d-lg-block">
+                                Menu
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-info-circle fa-2x"></i>
+                                <br class="d-none d-sm-none d-md-none d-lg-block">
+                                About
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-certificate fa-2x"></i>
+                                <br class="d-none d-sm-none d-md-none d-lg-block">
+                                Awards
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li id="phone" class="nav-item d-none d-md-none d-lg-block">
+                            <a href="tel:410-602-5008">
+                                <span>410-602-5008</span>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                            <div class="d-block">*We deliver</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="call-btn" class="d-block d-sm-block d-md-block d-lg-none">
+        <a href="tel:410-602-5008" class="btn">
+            <i class="fas fa-phone-volume fa-lg"></i>
+            410-602-5008
+            <span class="sr-only">(current)</span>
+        </a>
+        <p class="text-center">*We deliver</span>
+    </div>
+    
+
+    <main id="main-content" class="container">
+        
+    </main>
+
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <section id="hours" class="col-sm-4">
+                    <h4>Hours:</h4>
+                    Sun-Thur: 11:15am - 10:00pm<br>
+                    Fri: 11:15am - 2:30am <br>
+                    Saturday Closed
+                    <hr class="d-block d-sm-none">
+                </section>
+                <section id="address" class="col-sm-4">
+                    <h4>Address:</h4>
+                    7105 Reistertown Road<br>
+                    Baltimore, MD 21215 <br>
+                    <p>*Delivery area within 3-4 miles, with minimum order of $20 plus 
+                        $3charges for all deliveries</p>
+                    <hr class="d-block d-sm-none">
+                </section>
+                <section id="testimonials" class="col-sm-4">
+                    <q>
+                        I just wanted to share a quick note and let you know that you 
+                        guys do a really good job.
+                    </q>
+                    <q>
+                        I’m glad I decided to work with you. 
+                        It’s really great how easy your websites are to update and manage. 
+                        I never have any problem at all.
+                    </q>
+                    <hr class="d-block d-sm-none">
+                </section>
+            </div>
+            <div class="text-center">&copy; Copyright Dabid chu's China Bistro 2015</div>
+        </div> <!--Endo of conatiner-->
+
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
